@@ -1,0 +1,4 @@
+# @install: lix --silent download "haxelib:/tink_xml#0.2.0" into tink_xml/0.2.0/haxelib
+-lib tink_macro
+-cp ${HAXE_LIBCACHE}/tink_xml/0.2.0/haxelib/src
+-D tink_xml=0.2.0

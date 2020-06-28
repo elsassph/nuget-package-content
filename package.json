@@ -1,0 +1,23 @@
+{
+  "name": "nuget-package-content",
+  "version": "0.1.0",
+  "description": "",
+  "bin": "index.js",
+  "scripts": {
+    "postinstall": "lix download",
+    "build": "haxe build.hxml",
+    "dev": "nodemon --watch src -e hx --exec \"bash build-and-run.sh\"",
+    "test": "nodemon --watch src --watch test -e hx --exec \"haxe test.hxml\""
+  },
+  "files": ["index.js"],
+  "keywords": ["nuget"],
+  "author": "elsassph",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "glob": "^7.1.6",
+    "lix": "^15.9.0"
+  }
+}

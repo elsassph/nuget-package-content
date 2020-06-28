@@ -1,0 +1,9 @@
+-lib node-shebang
+-lib hxnodejs
+-lib tink_xml
+-cp src
+-main Main
+
+-js index.js
+
+-dce full

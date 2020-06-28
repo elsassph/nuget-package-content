@@ -1,0 +1,6 @@
+# @install: lix --silent download "haxelib:/node-shebang#0.1.0" into node-shebang/0.1.0/haxelib
+-cp ${HAXE_LIBCACHE}/node-shebang/0.1.0/haxelib/
+-D node-shebang=0.1.0
+--macro includeFile('shebang-header')
+-D source-header=
+
