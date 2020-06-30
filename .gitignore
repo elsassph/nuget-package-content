@@ -2,6 +2,7 @@ node_modules
 *.nuspec
 *.nupkg
 *.tgz
-*.js
 temp
 build-and-run.sh
+bin/index.js
+test.js

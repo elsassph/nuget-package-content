@@ -1,4 +1,4 @@
-# Nuget static content packager
+# Nuget static content packager and uploader
 
 A minimalistic, node-based, standalone nuget packager for static content files,
 based on the sources of the [NuGet client](https://github.com/NuGet/NuGet.Client).
@@ -10,16 +10,21 @@ based on the sources of the [NuGet client](https://github.com/NuGet/NuGet.Client
 For those who want to create simple nuget packages with static files,
 and who would like to avoid running .NET/Core and the official nuget client.
 
-The tool takes a `.nuspec` refering to static content files, and creates a
+- `nuget-package-content` takes a `.nuspec` refering to static content files, and: creates a
 hopefully valid `.nupkg` from that.
+- `nuget-upload-package` takes a `.nupkg` file and uploads it to a given Nuget repository.
 
 ## Usage
 
-Usage: `nuget-package-content <target> <version> [<output directory>]`
+Usage:
+
+- `nuget-package-content <nuspec> <version> [<output directory>]`
+- `nuget-upload-package <nupkg> <repository> <api key>`
 
 ```bash
 npm install nuget-package-content
 npx nuget-package-content MyApp.nuspec 1.2.3
+npx nuget-upload-package MyApp.nupkg https://nuget-repository/ ABC123
 ```
 
 ## Limitations

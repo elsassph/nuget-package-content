@@ -4,6 +4,6 @@
 -cp src
 -main Main
 
--js index.js
+-js bin/index.js
 
 -dce full
